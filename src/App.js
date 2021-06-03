@@ -36,9 +36,10 @@ class App extends Component {
 
             <ul>
                 {items.map(item =>(
-                    <li key={item.id}>
-                       Name: {item.name} | Email: {item.email}
-                    </li>
+                    <div key={item.id}>
+                      <p>My name is {item.name}</p>
+                       <p>With an email of {item.email}</p> 
+                    </div>
                 ))};
             </ul>
 
